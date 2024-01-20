@@ -2,7 +2,6 @@ import { useState } from "react"
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Sidebar as ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
-// import 'react-pro-sidebar/dist/css/styles.css';
 import { tokens } from "../../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
@@ -67,6 +66,12 @@ const Sidebar = () => {
       >
         <Menu 
           menuItemStyles={{
+            root:{
+              ":active" :{
+                color: "#6870fa !important",
+                backgroundColor: 'transparent'
+              }
+            },
             button: {
               ":hover" : {
                 color: "#868dfb !important",
