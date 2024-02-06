@@ -240,8 +240,8 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             <Item
-              title="FAQ page"
-              to="/faq"
+              title="Line Chart"
+              to="/line"
               icon={<TimelineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
